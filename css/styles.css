@@ -15,14 +15,17 @@ body {
     height: 170mm;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
+    position: relative;
 }
 
 #cable {
     background-color: black;
     width: 153mm;
     height: 68mm;
+    clip-path: url(#cablePath);
+    position: absolute;
 }
 
 #controller {
@@ -33,31 +36,34 @@ body {
     align-items: flex-start;
     justify-content: flex-end;
     flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    align-self: flex-end;
 }
 
 #trigger {
-    background-color: rgb(0, 36, 135);
+    background-color: rgb(17, 45, 123);
     width: 100%;
-    height: 100%;    
+    height: 100%;
+    clip-path: url(#triggerPath);  
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
     flex-direction: column;
-}
-
-#emptySpaceOverControllerBody {
-    width: 153mm;
-    height: 6mm;
+    position: absolute;
+    z-index: 1;
 }
 
 #controllerBody {
-    background-color: rgba(6, 170, 252, 0.893);
+    background-color: rgb(6, 170, 252);
     width: 153mm;
-    height: 96mm;    
+    height: 97mm;    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     clip-path: url(#controllerPath);
+    position:absolute;
+    z-index: 2;
 }
 
