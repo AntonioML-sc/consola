@@ -123,7 +123,10 @@ body {
 #controllerRow3Col2 {
     height: 100%;
     width: 20%;
-    background-color: lime;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: right;
 }
 
 #controllerRow3Col3 {
@@ -249,3 +252,119 @@ body {
     clip-path: url(#xboxButtonPath2);
 }
 
+#dPadContainer {
+    height: 24mm;
+    width: 24mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2mm;
+}
+
+.dPadContainerRow1 {
+    width: 24mm;
+    height: 8mm;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dPadContainerRow2 {
+    width: 24mm;
+    height: 8mm;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dPadEmpty {
+    height: 8mm;
+    width: 8mm;
+}
+
+#dPadTop {    
+    height: 8mm;
+    width: 8mm;
+    background-color: rgb(33, 73, 183);
+    border-top-left-radius: 1mm;
+    border-top-right-radius: 1mm;
+    border-top: 0.5mm solid black;
+    border-left: 0.5mm solid black;    
+    border-right: 0.5mm solid black;
+    box-shadow: 0mm 0mm 1mm 1mm rgba(0, 0, 0, 0.6);
+    z-index: 3;
+}
+
+#dPadBottom {    
+    height: 8mm;
+    width: 8mm;
+    background-color: rgb(33, 73, 183);
+    border-bottom-right-radius: 1mm;
+    border-bottom-left-radius: 1mm;
+    border-left: 0.5mm solid black;
+    border-right: 0.5mm solid black;
+    border-bottom: 0.5mm solid black;
+    box-shadow: 0mm 0mm 1mm 1mm rgba(0, 0, 0, 0.6);
+    z-index: 3;
+}
+
+#dPadLeft {
+    height: 8mm;
+    width: 8mm;
+    background-color: rgb(33, 73, 183);
+    border-top-left-radius: 1mm;
+    border-bottom-left-radius: 1mm;
+    border-top: 0.5mm solid black;
+    border-left: 0.5mm solid black;
+    border-bottom: 0.5mm solid black;
+    box-shadow: 0mm 0mm 1mm 1mm rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+#dPadLeftCopy {
+    height: 8mm;
+    width: 8mm;
+    background-color: rgb(33, 73, 183);
+    border-top-left-radius: 1mm;
+    border-bottom-left-radius: 1mm;
+    z-index: 4;
+}
+
+#dPadRight {    
+    height: 8mm;
+    width: 8mm;
+    background-color: rgb(33, 73, 183);
+    border-top-right-radius: 1mm;
+    border-bottom-right-radius: 1mm;
+    border-top: 0.5mm solid black;
+    border-right: 0.5mm solid black;
+    border-bottom: 0.5mm solid black;
+    box-shadow: 0mm 0mm 1mm 1mm rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+#dPadRightCopy {    
+    height: 8mm;
+    width: 8mm;
+    background-color: rgb(33, 73, 183);
+    border-top-right-radius: 1mm;
+    border-bottom-right-radius: 1mm;
+    z-index: 4;
+}
+
+#dPadCenter {    
+    height: 8mm;
+    width: 8mm;
+    background-color: rgb(38, 81, 200);
+    box-shadow: 0mm 0mm 0.6mm 0.6mm rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
