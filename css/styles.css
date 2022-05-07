@@ -29,7 +29,7 @@ body {
 }
 
 #controller {
-    background-color: orange;
+    /* background-color: orange; */
     width: 153mm;
     height: 102mm;    
     display: flex;
@@ -45,11 +45,7 @@ body {
     background-color: rgb(17, 45, 123);
     width: 100%;
     height: 100%;
-    clip-path: url(#triggerPath);  
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    flex-direction: column;
+    clip-path: url(#triggerPath);
     position: absolute;
     z-index: 1;
 }
@@ -57,13 +53,124 @@ body {
 #controllerBody {
     background-color: rgb(6, 170, 252);
     width: 153mm;
-    height: 97mm;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    height: 97mm;
     clip-path: url(#controllerPath);
     position:absolute;
     z-index: 2;
+}
+
+#controllerRow1 {
+    width: 100%;
+    height: 10%;
+}
+
+#controllerRow2 {
+    /* background-color: orange; */
+    width: 100%;
+    height: 29%;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+#controllerRow3 {
+    width: 100%;
+    height: 28%;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+#controllerRow4 {
+    width: 100%;
+    height: 33%;
+}
+
+#controllerRow2Col1 {    
+    height: 100%;
+    width: 20%;
+}
+
+#controllerRow2Col2 {    
+    height: 100%;
+    width: 20%;
+    background-color: orange;
+}
+
+#controllerRow2Col3 {
+    height: 100%;
+    width: 20%;
+    background-color: yellow;
+}
+
+#controllerRow2Col4 {
+    height: 100%;
+    width: 40%;
+}
+
+#controllerRow3Col1 {
+    height: 100%;
+    width: 25%;
+}
+
+#controllerRow3Col2 {
+    height: 100%;
+    width: 20%;
+    background-color: lime;
+}
+
+#controllerRow3Col3 {
+    height: 100%;
+    width: 10%;
+    background-color: lightgrey;
+}
+
+#controllerRow3Col4 {
+    height: 100%;
+    width: 20%;
+    background-color: orange;
+}
+
+#controllerRow3Col5 {
+    height: 100%;
+    width: 25%;
+}
+
+#buttonsRow1 {
+    width: 100%;
+    height: 60%;
+    background-color: azure;
+}
+
+#buttonsRow2 {
+    width: 100%;
+    height: 20%;
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: row;
+}
+
+#buttonsRow3 {
+    width: 100%;
+    height: 20%;
+    background-color: yellow;
+}
+
+#buttonsRow2Left {
+    height: 100%;
+    width: 25%;
+    background-color: rgb(33, 73, 183);
+}
+
+#buttonsRow2Center {
+    height: 100%;
+    width: 50%;
+    background-color: salmon;
+}
+
+#buttonsRow2Right {
+    height: 100%;
+    width: 25%;
+    background-color: rgb(33, 73, 183);
 }
 
