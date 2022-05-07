@@ -20,6 +20,14 @@ body {
     position: relative;
 }
 
+#cableContainer {
+    width: 153mm;
+    height: 68mm;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
 #cable {
     background-color: black;
     width: 153mm;
@@ -67,7 +75,7 @@ body {
 #controllerRow2 {
     /* background-color: orange; */
     width: 100%;
-    height: 29%;
+    height: 28%;
     z-index: 3;
     display: flex;
     flex-direction: row;
@@ -75,7 +83,7 @@ body {
 
 #controllerRow3 {
     width: 100%;
-    height: 28%;
+    height: 29%;
     z-index: 3;
     display: flex;
     flex-direction: row;
@@ -100,7 +108,6 @@ body {
 #controllerRow2Col3 {
     height: 100%;
     width: 20%;
-    background-color: yellow;
 }
 
 #controllerRow2Col4 {
@@ -138,39 +145,107 @@ body {
 
 #buttonsRow1 {
     width: 100%;
-    height: 60%;
-    background-color: azure;
+    height: 50%; 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 #buttonsRow2 {
     width: 100%;
-    height: 20%;
-    background-color: palevioletred;
+    height: 25%;
     display: flex;
     flex-direction: row;
 }
 
 #buttonsRow3 {
     width: 100%;
-    height: 20%;
-    background-color: yellow;
+    height: 25%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #buttonsRow2Left {
     height: 100%;
     width: 25%;
-    background-color: rgb(33, 73, 183);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #buttonsRow2Center {
     height: 100%;
-    width: 50%;
-    background-color: salmon;
+    width: 50%;  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 #buttonsRow2Right {
     height: 100%;
     width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonSmall {
     background-color: rgb(33, 73, 183);
+    height: 5mm;
+    width: 5mm;
+    border-radius: 50%;
+    box-shadow: 0mm 0mm 0.6mm 0.4mm rgba(0, 0, 0, 0.4);    
+    border: 0.2mm solid black;
+}
+
+.buttonSmall:hover {    
+    box-shadow: 0mm 0mm 0.2mm 0.2mm rgba(0, 0, 0, 0.6); 
+}
+
+#pilot {
+    height: 1.5mm;
+    width: 1.5mm;
+    border-radius: 50%;
+    background-color: rgb(33, 73, 183);
+    border: 0.1mm solid black;
+}
+
+#xboxButton {
+    height: 10mm;
+    width: 10mm;
+    border-radius: 50%;    
+    background-color: rgb(229, 241, 241); 
+    border: 0.8mm solid black;
+    box-shadow: 0mm 0mm 0.6mm 0.4mm rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#xboxButtonImg1 {
+    height: 10mm;
+    width: 10mm;
+    border-radius: 50%;  
+    background-color: black;
+    position: absolute;
+    z-index: 4;    
+    clip-path: url(#xboxButtonPath1);
+}
+
+#xboxButtonImg2 {
+    height: 10mm;
+    width: 10mm;
+    border-radius: 50%;  
+    background-color: black;
+    position: absolute;
+    z-index: 5;    
+    clip-path: url(#xboxButtonPath2);
 }
 
