@@ -10,7 +10,6 @@ body {
 }
 
 #fondo {
-    background-color: aquamarine;
     width: 153mm;
     height: 170mm;
     display: flex;
@@ -37,7 +36,6 @@ body {
 }
 
 #controller {
-    /* background-color: orange; */
     width: 153mm;
     height: 102mm;    
     display: flex;
@@ -59,7 +57,7 @@ body {
 }
 
 #controllerBody {
-    background-color: rgb(3, 148, 220);
+    background: radial-gradient(at 50% 20%, rgb(7, 163, 241), rgb(2, 128, 190));
     width: 153mm;
     height: 97mm;
     clip-path: url(#controllerPath);
@@ -212,11 +210,13 @@ body {
     width: 5mm;
     border-radius: 50%;
     box-shadow: 0mm 0mm 0.6mm 0.4mm rgba(0, 0, 0, 0.4);
-    border: 0.2mm solid black;
+    border: 0.2mm solid rgb(17, 45, 123);
+    transition: 0.5s;
 }
 
 .buttonSmall:hover {    
-    box-shadow: 0mm 0mm 0.2mm 0.2mm rgba(0, 0, 0, 0.6); 
+    box-shadow: 0mm 0mm 0.2mm 0.2mm rgba(0, 0, 0, 0.6);
+    transition: 0.5s; 
 }
 
 #pilot {
@@ -231,13 +231,19 @@ body {
     height: 10mm;
     width: 10mm;
     border-radius: 50%;    
-    background-color: rgb(229, 241, 241); 
+    background: radial-gradient(rgb(229, 241, 241), rgb(190, 190, 190)); 
     border: 0.8mm solid black;
-    box-shadow: 0mm 0mm 0.6mm 0.4mm rgba(0, 0, 0, 0.4);
+    box-shadow: 0mm 0mm 0.6mm 0.6mm rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+#xboxButton:hover {
+    box-shadow: 0mm 0mm 0.2mm 0.2mm rgba(0, 0, 0, 0.4);
+    transition: 0.5s
 }
 
 #xboxButtonImg1 {
@@ -519,46 +525,44 @@ body {
     height: 9mm;
     background-color: rgb(33, 73, 183);
     border-radius: 50%;    
-    border: 0.2mm solid black;
+    border: 0.2mm solid rgb(17, 45, 123);
     box-shadow: 0mm 0mm 0.8mm 0.8mm rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 8mm;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.buttonBig:hover {
+    box-shadow: 0mm 0mm 0.4mm 0.4mm rgba(0, 0, 0, 0.4);
+    font-size: 7.7mm;
+    transition: 0.5s;
+}
+
 #buttonTextY {
     width: 9mm;
     height: 9mm;
-    font-family: Arial, Helvetica, sans-serif;
     color: rgb(213, 213, 2);
-    text-align: center;
-    font-size: 8mm;
 }
 
 #buttonTextX {
     width: 9mm;
     height: 9mm;
-    font-family: Arial, Helvetica, sans-serif;
     color: rgb(2, 209, 209);
-    text-align: center;
-    font-size: 8mm;
 }
 
 #buttonTextB {
     width: 9mm;
     height: 9mm;
-    font-family: Arial, Helvetica, sans-serif;
     color: rgb(201, 1, 1);
-    text-align: center;
-    font-size: 8mm;
 }
 
 #buttonTextA {
     width: 9mm;
     height: 9mm;
-    font-family: Arial, Helvetica, sans-serif;
     color: rgb(3, 185, 3);
-    text-align: center;
-    font-size: 8mm;
 }
