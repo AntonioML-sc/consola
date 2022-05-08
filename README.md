@@ -24,7 +24,7 @@ VERSIÓN ACTUAL: https://antonioml-sc.github.io/consola/
 
 #### Bugs conocidos y posibles nuevos trabajos:
 
-- Existe un bug que hace que el cable pierda la posición correcata en el eje X al hacer zoom por encima de las dimensiones del conjunto.
+- Existe un bug que hace que el cable pierda la posición correcata en el eje X al hacer zoom por encima de las dimensiones del conjunto. Corregido en la última versión.
 
 - Se plantea incorporar un archivo en JavaScript para dotar de movimientos a elementos que aún no los tienen, como los sticks. Hacer lo propio con los gatillos requerirá un refactor que separe a éstos entre sí y de la inserción del cable en 3 elementos.
 

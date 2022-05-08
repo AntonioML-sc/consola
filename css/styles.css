@@ -24,7 +24,7 @@ body {
     height: 68mm;
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: relative;
 }
 
 #cable {
