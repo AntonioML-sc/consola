@@ -73,7 +73,6 @@ body {
 }
 
 #controllerRow2 {
-    /* background-color: orange; */
     width: 100%;
     height: 28%;
     z-index: 3;
@@ -127,22 +126,25 @@ body {
     height: 100%;
     width: 20%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: right;
 }
 
 #controllerRow3Col3 {
     height: 100%;
     width: 10%;
-    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 #controllerRow3Col4 {
     height: 100%;
     width: 20%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: left;
     align-items: flex-start;
 }
@@ -259,8 +261,8 @@ body {
 }
 
 #dPadContainer {
-    height: 24mm;
-    width: 24mm;
+    height: 21mm;
+    width: 21mm;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,8 +271,8 @@ body {
 }
 
 .dPadContainerRow1 {
-    width: 24mm;
-    height: 8mm;
+    width: 21mm;
+    height: 7mm;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -278,8 +280,8 @@ body {
 }
 
 .dPadContainerRow2 {
-    width: 24mm;
-    height: 8mm;
+    width: 21mm;
+    height: 7mm;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -287,13 +289,13 @@ body {
 }
 
 .dPadEmpty {
-    height: 8mm;
-    width: 8mm;
+    height: 7mm;
+    width: 7mm;
 }
 
 #dPadTop {    
-    height: 8mm;
-    width: 8mm;
+    height: 7mm;
+    width: 7mm;
     background-color: rgb(33, 73, 183);
     border-top-left-radius: 1mm;
     border-top-right-radius: 1mm;
@@ -305,8 +307,8 @@ body {
 }
 
 #dPadBottom {    
-    height: 8mm;
-    width: 8mm;
+    height: 7mm;
+    width: 7mm;
     background-color: rgb(33, 73, 183);
     border-bottom-right-radius: 1mm;
     border-bottom-left-radius: 1mm;
@@ -318,8 +320,8 @@ body {
 }
 
 #dPadLeft {
-    height: 8mm;
-    width: 8mm;
+    height: 7mm;
+    width: 7mm;
     background-color: rgb(33, 73, 183);
     border-top-left-radius: 1mm;
     border-bottom-left-radius: 1mm;
@@ -334,8 +336,8 @@ body {
 }
 
 #dPadLeftCopy {
-    height: 8mm;
-    width: 8mm;
+    height: 7mm;
+    width: 7mm;
     background-color: rgb(33, 73, 183);
     border-top-left-radius: 1mm;
     border-bottom-left-radius: 1mm;
@@ -343,8 +345,8 @@ body {
 }
 
 #dPadRight {    
-    height: 8mm;
-    width: 8mm;
+    height: 7mm;
+    width: 7mm;
     background-color: rgb(33, 73, 183);
     border-top-right-radius: 1mm;
     border-bottom-right-radius: 1mm;
@@ -359,8 +361,8 @@ body {
 }
 
 #dPadRightCopy {    
-    height: 8mm;
-    width: 8mm;
+    height: 7mm;
+    width: 7mm;
     background-color: rgb(33, 73, 183);
     border-top-right-radius: 1mm;
     border-bottom-right-radius: 1mm;
@@ -368,8 +370,8 @@ body {
 }
 
 #dPadCenter {    
-    height: 8mm;
-    width: 8mm;
+    height: 7mm;
+    width: 7mm;
     background-color: rgb(38, 81, 200);
     box-shadow: 0mm 0mm 0.6mm 0.6mm rgba(0, 0, 0, 0.3);
     z-index: 5;
@@ -418,3 +420,71 @@ body {
     background: radial-gradient(rgb(6, 170, 252), rgb(6, 95, 139));
     border-radius: 50%;
 }
+
+#selectorText1 {
+    width: 21mm;
+    height: 3mm;
+    text-align: right;
+    color: white;
+    margin-right: 1mm;
+}
+
+#selectorText2 {
+    width: 20mm;
+    height: 3mm;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    margin-left: 1mm;
+    margin-top: 4.8mm;
+}
+
+#selectorRow1 {
+    width: 100%;
+    height: 60%;
+}
+
+#selectorRow2 {
+    width: 100%;
+    height: 15%;
+    font-size: small;
+    text-align: center;
+    color: white;
+}
+
+#selectorRow3 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#selectorRow4 {
+    width: 100%;
+    height: 5%;
+}
+
+#selector {
+    width: 70%;
+    height: 80%;
+    border-radius: 0.5mm;    
+    background: linear-gradient(to right, rgb(182, 181, 181), rgb(224, 222, 222), rgb(182, 181, 181));    
+    border: 0.5mm solid grey;
+    box-shadow: 0mm 0mm 0.5mm 0.7mm rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#selectorSetoff {
+    width: 5%;
+    height: 70%;
+    border-radius: 50%;
+    border: 0.5mm solid rgb(164, 164, 164);    
+    box-shadow: 0mm 0mm 0.2mm 0.4mm rgba(164, 164, 164, 0.6);
+}
+
+
