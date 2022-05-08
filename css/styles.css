@@ -59,7 +59,7 @@ body {
 }
 
 #controllerBody {
-    background-color: rgb(6, 170, 252);
+    background-color: rgb(3, 148, 220);
     width: 153mm;
     height: 97mm;
     clip-path: url(#controllerPath);
@@ -96,13 +96,16 @@ body {
 
 #controllerRow2Col1 {    
     height: 100%;
-    width: 20%;
+    width: 18%;
 }
 
 #controllerRow2Col2 {    
     height: 100%;
-    width: 20%;
-    background-color: orange;
+    width: 22%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
 
 #controllerRow2Col3 {
@@ -138,7 +141,10 @@ body {
 #controllerRow3Col4 {
     height: 100%;
     width: 20%;
-    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
 }
 
 #controllerRow3Col5 {
@@ -367,4 +373,48 @@ body {
     background-color: rgb(38, 81, 200);
     box-shadow: 0mm 0mm 0.6mm 0.6mm rgba(0, 0, 0, 0.3);
     z-index: 5;
+}
+
+#leftJoystickHousing {
+    width: 20mm;
+    height: 20mm;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0mm 0mm 1.5mm 2mm rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#rightJoystickHousing {
+    width: 20mm;
+    height: 20mm;
+    margin-top: 2mm;    
+    margin-left: 3mm;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0mm 0mm 1.5mm 2mm rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.joystickBorder {
+    width: 15.5mm;
+    height: 15.5mm;
+    background-color: rgb(3, 148, 220);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.joystick {    
+    width: 13mm;
+    height: 13mm;
+    background: radial-gradient(rgb(6, 170, 252), rgb(6, 95, 139));
+    border-radius: 50%;
 }
