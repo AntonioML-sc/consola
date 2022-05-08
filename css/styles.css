@@ -57,7 +57,7 @@ body {
 }
 
 #controllerBody {
-    background: radial-gradient(at 50% 20%, rgb(7, 163, 241), rgb(2, 128, 190));
+    background: radial-gradient(at 50% 20%, rgb(7, 163, 241), rgb(0, 118, 177));
     width: 153mm;
     height: 97mm;
     clip-path: url(#controllerPath);
