@@ -7,9 +7,12 @@ El objeto de este proyecto con fines de aprendizaje, que será el primero que re
 
 #### Objetivos:
 
-1- Familiarizarse con la estructura de un proyecto dividido en múltiples <div> con una estructura jerárquica.
-2- Testear el uso de diversas formas de colocar los <div>, en especial el uso de flexbox, pero también el uso de márgenes y otros medios para posicionar o superponer unas secciones sobre otras.
+1- Familiarizarse con la estructura de un proyecto dividido en múltiples div con una estructura jerárquica.
+
+2- Testear el uso de diversas formas de colocar los div, en especial el uso de flexbox, pero también el uso de márgenes y otros medios para posicionar o superponer unas secciones sobre otras.
+
 3- Emplear las formas básicas para definir las dimensiones y estilos de las divisiones usadas.
+
 4- Usar algunos elementos que reaccionen al usuario, en este caso al pasar el cursor sobre los elementos, hasta donde el uso de CSS permita.
 
 #### Notas de desarrollo:
